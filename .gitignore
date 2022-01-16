@@ -1,3 +1,4 @@
-build/
-install/
+acceleration/
+build*/
+install*/
 log/

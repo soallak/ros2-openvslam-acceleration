@@ -1,25 +1,36 @@
 repositories:
-  acceleration_firmware:
-    type: git
-    url: https://github.com/ros-acceleration/acceleration_firmware.git
-    version: main
-  ament_acceleration:
-    type: git
-    url: https://github.com/ros-acceleration/ament_acceleration.git
-    version: main
-  ament_vitis:
-    type: git
-    url: https://github.com/ros-acceleration/ament_vitis.git
-    version: main
-  colcon-acceleration:
-    type: git
-    url: https://github.com/ros-acceleration/colcon-acceleration.git
-    version: main
   image_pipeline:
     type: git
     url: https://github.com/ros-acceleration/image_pipeline.git
     version: ros2
-  vitis_common:
+  kria/acceleration_examples:
+    type: git
+    url: https://github.com/ros-acceleration/acceleration_examples
+    version: 9538f48ceaad5cd5c289430e4e595b5daac0e16a
+  kria/acceleration_firmware:
+    type: git
+    url: https://github.com/ros-acceleration/acceleration_firmware.git
+    version: main
+  kria/acceleration_firmware_kv260:
+    type: zip
+    url: https://www.xilinx.com/bin/public/openDownload?filename=acceleration_firmware_kv260.zip
+  kria/ament_acceleration:
+    type: git
+    url: https://github.com/ros-acceleration/ament_acceleration.git
+    version: main
+  kria/ament_vitis:
+    type: git
+    url: https://github.com/ros-acceleration/ament_vitis.git
+    version: main
+  kria/colcon-acceleration:
+    type: git
+    url: https://github.com/ros-acceleration/colcon-acceleration.git
+    version: main
+  kria/colcon-mixin:
+    type: git
+    url: https://github.com/colcon/colcon-mixin.git
+    version: master
+  kria/vitis_common:
     type: git
     url: https://github.com/ros-acceleration/vitis_common.git
     version: master
