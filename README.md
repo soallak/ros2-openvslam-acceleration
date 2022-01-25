@@ -1,13 +1,14 @@
-# ROS2 Image Pipeline Acceleration
+ROS2 image pipeline acceleration workspace
 
-## Build
+## Getting Started
 
 1. Import repositories using *vcs*: 
 ```
 vcs import < src/.repos
 ```
 
-2. I needed to manually extend colcon:
+2. This is optional, in my case,  I needed to manually extend colcon, instead of installing from
+   PyPi:
 
   a. colcon-acceleration: 
 ```
@@ -32,10 +33,13 @@ colcon build --merge-install
 4. For hardware, from a new terminal do:
 ```
 source $ROS2_HONE/setup.zsh
-colcon acceleration select kv260
-colcon build --build-base=build-kv260 --install-base=install-kv260 --merge-install --mixin kv260 --packages-select ament_vitis vadd_publisher ament_acceleration
-colcon acceleration linux vanilla --install-dir install-kv260
+colcon acceleration select te0807
 
+#Test that tool chain is working
+colcon build --build-base=build-te0807 --install-base=install-te0807 --merge-install --mixin te0807 --packages-select ament_vitis ament_acceleration vadd_publisher
+
+#To create sd_card.img. Not supported for te0807
+colcon acceleration linux vanilla --install-dir install-te0807
 
 ```
 
@@ -61,4 +65,4 @@ To create `sd_card.img` `colcon acceleration linux` parses the output `fdisk` an
 language being english, therefore the `LANG` variable in my `.envrc`. `kpartx` is also needed so
 make sure it is installed
 
-
+One can add `source $ROS2_HONE/setup.zsh` to `.envrc` to auto-source ROS2 distribution

@@ -1,4 +1,8 @@
 repositories:
+  acceleration_firmware_te0807:
+    type: git
+    url: git@gitlab.plc2.de:Ouassil/acceleration-firmware-te0807.git
+    version: main
   image_pipeline:
     type: git
     url: https://github.com/ros-acceleration/image_pipeline.git
@@ -11,9 +15,6 @@ repositories:
     type: git
     url: https://github.com/ros-acceleration/acceleration_firmware.git
     version: main
-  kria/acceleration_firmware_kv260:
-    type: zip
-    url: https://www.xilinx.com/bin/public/openDownload?filename=acceleration_firmware_kv260.zip
   kria/ament_acceleration:
     type: git
     url: https://github.com/ros-acceleration/ament_acceleration.git
