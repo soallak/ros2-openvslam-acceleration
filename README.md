@@ -38,6 +38,9 @@ colcon acceleration select te0807
 #Test that tool chain is working
 colcon build --build-base=build-te0807 --install-base=install-te0807 --merge-install --mixin te0807 --packages-select ament_vitis ament_acceleration vadd_publisher
 
+# Compile image_proc for te0807
+colcon build --build-base=build-te0807 --install-base=install-te0807 --merge-install --mixin te0807 --packages-select ament_vitis ament_acceleration image_proc vitis_common tracetools_image_pipeline
+
 #To create sd_card.img. Not supported for te0807
 colcon acceleration linux vanilla --install-dir install-te0807
 

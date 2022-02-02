@@ -2,3 +2,5 @@ acceleration/
 build*/
 install*/
 log/
+
+vitis_hls.log
