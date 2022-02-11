@@ -1,12 +1,4 @@
 repositories:
-  acceleration_firmware_te0807:
-    type: git
-    url: git@gitlab.plc2.de:Ouassil/acceleration-firmware-te0807.git
-    version: main
-  image_pipeline:
-    type: git
-    url: https://github.com/ros-acceleration/image_pipeline.git
-    version: ros2
   kria/acceleration_examples:
     type: git
     url: https://github.com/ros-acceleration/acceleration_examples
@@ -35,3 +27,11 @@ repositories:
     type: git
     url: https://github.com/ros-acceleration/vitis_common.git
     version: master
+  kria_extension/acceleration_firmware_te0807:
+    type: git
+    url: git@gitlab.plc2.de:Ouassil/acceleration-firmware-te0807.git
+    version: main
+  perception/image_pipeline:
+    type: git
+    url: https://github.com/ros-acceleration/image_pipeline.git
+    version: ros2

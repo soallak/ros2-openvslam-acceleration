@@ -1,4 +1,10 @@
-ROS2 image pipeline acceleration workspace
+ROS2 image pipeline acceleration workspace. Consult [PLC2 wiki](https://gitlab.plc2.de/Soeren/INSEALION/-/wikis/ROS2-AA-on-TE0807) for additional information
+
+## Dependencies 
+The following dependencies needs to be installed before compiling and using this repository:
+
+- [OpenVSLAM](https://github.com/OpenVSLAM-Community/openvslam)
+- Vitis 2020.2
 
 ## Getting Started
 
@@ -46,26 +52,21 @@ colcon acceleration linux vanilla --install-dir install-te0807
 
 ```
 
-## Usage notes
 
-I used [*direnv*](https://direnv.net/) to setup environment variables. For installation and usage
-follow the instructions there.
-Next step is to modify environment variables defined in `.envrc` to match your system configuration,
-and run `direnv allow`
+## VSLAM 
+### Manual Setup
+To compile run:
+```
+colcon build --merge-install --cmake-args -DUSE_PANGOLIN_VIEWER=ON -DUSE_SOCKET_PUBLISHER=OFF 
+```
+The above command will also download default datasets.
 
-Alternatively once could setup the same environment by `source .envrc`. Again, refer to *direnv*
-documentation for advantages of using *direnv*
+From a new Terminal, start Rviz:
+```
+./scripts/start_rviz.sh
+```
 
-To export compile commands, use `colcon build --merge-install --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=on`
-and then create softlinks when needed
-
-`source $XILINX_VITIS/settings64.csh` causes `cmake` related errors
-
-
-For HW builds, the used platform can be changed. `colcon acceleration list` to list available ones
-
-To create `sd_card.img` `colcon acceleration linux` parses the output `fdisk` and relies on the
-language being english, therefore the `LANG` variable in my `.envrc`. `kpartx` is also needed so
-make sure it is installed
-
-One can add `source $ROS2_HONE/setup.zsh` to `.envrc` to auto-source ROS2 distribution
+From another shell, start data publisher:
+```
+./scripts/start_publisher.sh build/data_euroc/Machine_Hall_01/
+```
