@@ -53,13 +53,14 @@ colcon acceleration linux vanilla --install-dir install-te0807
 ```
 
 
-## VSLAM 
-### Manual Setup
+## SLAM Pipeline
 To compile run:
 ```
 colcon build --merge-install --cmake-args -DUSE_PANGOLIN_VIEWER=ON -DUSE_SOCKET_PUBLISHER=OFF 
 ```
 The above command will also download default datasets.
+
+### With scripts
 
 From a new Terminal, start Rviz:
 ```
@@ -69,4 +70,10 @@ From a new Terminal, start Rviz:
 From another shell, start data publisher:
 ```
 ./scripts/start_publisher.sh build/data_euroc/Machine_Hall_01/
+```
+
+### With Launch files
+
+```
+ros2 launch slam_launch slam.launch.py dataset_path:=build/data_euroc/Machine_Hall_01/ dataset_period:=100 dataset_type:=euroc
 ```

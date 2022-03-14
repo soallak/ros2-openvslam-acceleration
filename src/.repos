@@ -13,8 +13,8 @@ repositories:
     version: main
   kria/ament_vitis:
     type: git
-    url: https://github.com/ros-acceleration/ament_vitis.git
-    version: main
+    url: git@github.com:soallak/ament_vitis.git
+    version: swallak/fix/correct-hls-clock-arg-format
   kria/colcon-acceleration:
     type: git
     url: https://github.com/ros-acceleration/colcon-acceleration.git
@@ -25,13 +25,41 @@ repositories:
     version: master
   kria/vitis_common:
     type: git
-    url: https://github.com/ros-acceleration/vitis_common.git
-    version: master
+    url: git@github.com:soallak/vitis_common.git
+    version: swallak/fix/make-util-library-shared
   kria_extension/acceleration_firmware_te0807:
     type: git
     url: git@gitlab.plc2.de:Ouassil/acceleration-firmware-te0807.git
     version: main
   perception/image_pipeline:
     type: git
-    url: https://github.com/ros-acceleration/image_pipeline.git
+    url: https://github.com/ros-perception/image_pipeline.git
+    version: ros2
+  simulation/data_euroc:
+    type: git
+    url: git@gitlab.plc2.de:Ouassil/euroc-mav-dataset.git
+    version: main
+  simulation/data_publisher:
+    type: git
+    url: git@gitlab.plc2.de:Ouassil/data-publisher.git
+    version: main
+  simulation/data_tum:
+    type: git
+    url: git@gitlab.plc2.de:Ouassil/tum-dataset.git
+    version: main
+  simulation/dataset_publisher_ros2:
+    type: git
+    url: https://github.com/mirellameelo/dataset_publisher_ros2.git
+    version: master
+  simulation/slam_launch:
+    type: git
+    url: git@gitlab.plc2.de:Ouassil/slam-launch-files.git
+    version: main
+  slam/openvslam:
+    type: git
+    url: git@github.com:soallak/openvslam.git
+    version: main
+  slam/openvslam-ros-fork:
+    type: git
+    url: git@gitlab.plc2.de:Ouassil/openvslam-ros-fork.git
     version: ros2
