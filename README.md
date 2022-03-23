@@ -3,13 +3,14 @@ ROS2 image pipeline acceleration workspace. Consult [PLC2 wiki](https://gitlab.p
 ## Dependencies 
 The following dependencies needs to be installed before compiling and using this repository:
 
-- [OpenVSLAM](https://github.com/OpenVSLAM-Community/openvslam)
+- Dependencies of [OpenVSLAM](https://openvslam-community.readthedocs.io/en/latest/installation.html#dependencies)
 - Vitis 2020.2
 
 ## Getting Started
 
 1. Import repositories using *vcs*: 
 ```
+cd src/
 vcs import < src/.repos
 ```
 
