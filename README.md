@@ -60,20 +60,31 @@ colcon build --merge-install --cmake-args -DUSE_PANGOLIN_VIEWER=ON -DUSE_SOCKET_
 ```
 The above command will also download default datasets.
 
-### With scripts
 
-From a new Terminal, start Rviz:
-```
-./scripts/start_rviz.sh
-```
-
-From another shell, start data publisher:
-```
-./scripts/start_publisher.sh build/data_euroc/Machine_Hall_01/
-```
-
-### With Launch files
+### Without Rviz2
 
 ```
 ros2 launch slam_launch slam.launch.py dataset_path:=build/data_euroc/Machine_Hall_01/ dataset_period:=100 dataset_type:=euroc
+```
+
+### With Rviz2
+
+```
+ros2 launch slam_launch slam.launch.py dataset_path:=build/data_euroc/Machine_Hall_01/ dataset_period:=100 dataset_type:=euroc start_rviz2:=true
+```
+
+## Traces Analysis
+
+```
+lttng create data_euroc_Machine_Hall_01
+lttng enable-event --userspace slam_tracepoint_provider:'*' 
+lttng start
+```
+
+After all images are published
+
+```
+lttng stop
+ros2 run slam_tracepoint_analysis process  ~/lttng-traces/data_euroc_Machine_Hall_01-20220322-200832/ data_euroc_Machine_Hall_01_cpu.png
+
 ```

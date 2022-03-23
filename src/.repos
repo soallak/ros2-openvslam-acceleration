@@ -29,7 +29,7 @@ repositories:
     version: swallak/fix/make-util-library-shared
   kria_extension/acceleration_firmware_te0807:
     type: git
-    url: git@gitlab.plc2.de:Ouassil/acceleration-firmware-te0807.git
+    url: git@github.com:soallak/ros2_acceleration_firmware_te0807.git
     version: main
   perception/image_pipeline:
     type: git
@@ -37,23 +37,27 @@ repositories:
     version: ros2
   simulation/data_euroc:
     type: git
-    url: git@gitlab.plc2.de:Ouassil/euroc-mav-dataset.git
+    url: git@github.com:soallak/ros2_data_euroc.git
     version: main
   simulation/data_publisher:
     type: git
-    url: git@gitlab.plc2.de:Ouassil/data-publisher.git
+    url: git@github.com:soallak/ros2_data_publisher.git
     version: main
   simulation/data_tum:
     type: git
-    url: git@gitlab.plc2.de:Ouassil/tum-dataset.git
+    url: git@github.com:soallak/ros2_data_tum.git
     version: main
-  simulation/dataset_publisher_ros2:
-    type: git
-    url: https://github.com/mirellameelo/dataset_publisher_ros2.git
-    version: master
   simulation/slam_launch:
     type: git
-    url: git@gitlab.plc2.de:Ouassil/slam-launch-files.git
+    url: git@github.com:soallak/ros2_slam_launch.git
+    version: main
+  simulation/slam_tracepoint_analysis:
+    type: git
+    url: git@github.com:soallak/ros2_slam_tracepoint_analysis.git
+    version: main
+  simulation/slam_tracepoint_provider:
+    type: git
+    url: git@github.com:soallak/ros2_slam_tracepoint_provider.git
     version: main
   slam/openvslam:
     type: git
@@ -61,5 +65,5 @@ repositories:
     version: main
   slam/openvslam-ros-fork:
     type: git
-    url: git@gitlab.plc2.de:Ouassil/openvslam-ros-fork.git
+    url: git@github.com:soallak/ros2_openvslam.git
     version: ros2
