@@ -1,5 +1,3 @@
-ROS2 image pipeline acceleration workspace. Consult [PLC2 wiki](https://gitlab.plc2.de/Soeren/INSEALION/-/wikis/ROS2-AA-on-TE0807) for additional information
-
 ## Dependencies 
 The following dependencies needs to be installed before compiling and using this repository:
 
