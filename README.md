@@ -12,7 +12,7 @@ cd src/
 vcs import < src/.repos
 ```
 
-2. This is optional, in my case,  I needed to manually extend colcon, instead of installing from
+2. This is optional, in my case, I needed to manually extend colcon, instead of installing from
    PyPi:
 
   a. colcon-acceleration: 
@@ -36,21 +36,22 @@ colcon build --merge-install
 ```
 
 4. For hardware, from a new terminal do:
+
+Refer to Xilinx build instructions [example](https://xilinx.github.io/KRS/sphinx/build/html/docs/examples/0_ros2_publisher.html#building-creating-the-raw-image-and-running-in-hardware) 
 ```
 source $ROS2_HONE/setup.zsh
-colcon acceleration select te0807
+colcon acceleration select kv260
 
 #Test that tool chain is working
-colcon build --build-base=build-te0807 --install-base=install-te0807 --merge-install --mixin te0807 --packages-select ament_vitis ament_acceleration vadd_publisher
+colcon build --build-base=build-kv260 --install-base=install-kv260 --merge-install --mixin kv260 --packages-select ament_vitis ament_acceleration vadd_publisher
 
-# Compile image_proc for te0807
-colcon build --build-base=build-te0807 --install-base=install-te0807 --merge-install --mixin te0807 --packages-select ament_vitis ament_acceleration image_proc vitis_common tracetools_image_pipeline
+# Compile image_proc for kv260
+colcon build --build-base=build-kv260 --install-base=install-kv260 --merge-install --mixin kv260 --packages-select ament_vitis ament_acceleration image_proc vitis_common tracetools_image_pipeline
 
-#To create sd_card.img. Not supported for te0807
-colcon acceleration linux vanilla --install-dir install-te0807
+#To create sd_card.img
+colcon acceleration linux vanilla --install-dir install-kv260
 
 ```
-
 
 ## SLAM Pipeline
 To compile run:
