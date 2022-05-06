@@ -1,8 +1,4 @@
 repositories:
-  kria/acceleration_examples:
-    type: git
-    url: https://github.com/ros-acceleration/acceleration_examples
-    version: 9538f48ceaad5cd5c289430e4e595b5daac0e16a
   kria/acceleration_firmware:
     type: git
     url: https://github.com/ros-acceleration/acceleration_firmware.git
@@ -11,10 +7,14 @@ repositories:
     type: git
     url: https://github.com/ros-acceleration/ament_acceleration.git
     version: main
+  kria/ament_cuda:
+    type: git
+    url: https://github.com/ros-acceleration/ament_cuda.git
+    version: main
   kria/ament_vitis:
     type: git
     url: git@github.com:soallak/ament_vitis.git
-    version: swallak/fix/correct-hls-clock-arg-format
+    version: soallak/generate-dtb-symbols
   kria/colcon-acceleration:
     type: git
     url: https://github.com/ros-acceleration/colcon-acceleration.git
@@ -26,15 +26,15 @@ repositories:
   kria/vitis_common:
     type: git
     url: git@github.com:soallak/vitis_common.git
-    version: swallak/fix/make-util-library-shared
-  kria_extension/acceleration_firmware_te0807:
+    version: soallak/add-vitis-vision-ext
+  perception/hwcv:
     type: git
-    url: git@github.com:soallak/ros2_acceleration_firmware_te0807.git
+    url: git@github.com:soallak/ros2_hwcv.git
     version: main
   perception/image_pipeline:
     type: git
-    url: https://github.com/ros-perception/image_pipeline.git
-    version: ros2
+    url: git@github.com:soallak/image_pipeline.git
+    version: soallak/add-hwcv-stereo-to-stereo-image-proc
   simulation/data_euroc:
     type: git
     url: git@github.com:soallak/ros2_data_euroc.git
