@@ -3,6 +3,13 @@ repositories:
     type: git
     url: https://github.com/ros-acceleration/acceleration_firmware.git
     version: main
+  kria/acceleration_firmware_kv260:
+      type: zip
+      url: https://github.com/ros-acceleration/acceleration_firmware_kv260/releases/download/v0.9.0/acceleration_firmware_kv260.zip
+  kria/acceleration_firmware_kv260_soallak:
+    type: git
+    url: git@github.com:soallak/acceleration_firmware_kv260.git
+    version: main
   kria/ament_acceleration:
     type: git
     url: https://github.com/ros-acceleration/ament_acceleration.git
@@ -42,10 +49,6 @@ repositories:
   simulation/data_publisher:
     type: git
     url: git@github.com:soallak/ros2_data_publisher.git
-    version: main
-  simulation/data_tum:
-    type: git
-    url: git@github.com:soallak/ros2_data_tum.git
     version: main
   simulation/slam_launch:
     type: git
