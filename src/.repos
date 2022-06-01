@@ -3,9 +3,6 @@ repositories:
     type: git
     url: https://github.com/ros-acceleration/acceleration_firmware.git
     version: main
-  kria/acceleration_firmware_kv260:
-      type: zip
-      url: https://github.com/ros-acceleration/acceleration_firmware_kv260/releases/download/v0.9.0/acceleration_firmware_kv260.zip
   kria/acceleration_firmware_kv260_soallak:
     type: git
     url: git@github.com:soallak/acceleration_firmware_kv260.git
@@ -21,7 +18,7 @@ repositories:
   kria/ament_vitis:
     type: git
     url: git@github.com:soallak/ament_vitis.git
-    version: soallak/generate-dtb-symbols
+    version: soallak/introduce-firmware-dir-variable
   kria/colcon-acceleration:
     type: git
     url: https://github.com/ros-acceleration/colcon-acceleration.git
@@ -41,7 +38,7 @@ repositories:
   perception/image_pipeline:
     type: git
     url: git@github.com:soallak/image_pipeline.git
-    version: soallak/add-hwcv-stereo-to-stereo-image-proc
+    version: soallak/add-tracing-to-stereo-image-proc
   simulation/data_euroc:
     type: git
     url: git@github.com:soallak/ros2_data_euroc.git

@@ -2,7 +2,7 @@
 The following dependencies needs to be installed before compiling and using this repository:
 
 - Dependencies of [OpenVSLAM](https://openvslam-community.readthedocs.io/en/latest/installation.html#dependencies)
-- Vitis 2020.2
+- Vitis 2021.2
 
 ## Getting Started
 
