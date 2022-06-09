@@ -5,7 +5,7 @@ repositories:
     version: main
   kria/acceleration_firmware_kv260_soallak:
     type: git
-    url: https://github.com/soallak/acceleration_firmware_kv260.git
+    url: git@github.com:soallak/acceleration_firmware_kv260.git
     version: main
   kria/ament_acceleration:
     type: git
@@ -17,7 +17,7 @@ repositories:
     version: main
   kria/ament_vitis:
     type: git
-    url: https://github.com/soallak/ament_vitis.git
+    url: git@github.com:soallak/ament_vitis.git
     version: soallak/introduce-firmware-dir-variable
   kria/colcon-acceleration:
     type: git
@@ -29,41 +29,41 @@ repositories:
     version: master
   kria/vitis_common:
     type: git
-    url: https://github.com/soallak/vitis_common.git
+    url: git@github.com:soallak/vitis_common.git
     version: soallak/add-vitis-vision-ext
   perception/hwcv:
     type: git
-    url: https://github.com/soallak/ros2_hwcv.git
+    url: git@github.com:soallak/ros2_hwcv.git
     version: main
   perception/image_pipeline:
     type: git
-    url: https://github.com/soallak/image_pipeline.git
+    url: git@github.com:soallak/image_pipeline.git
     version: soallak/add-tracing-to-stereo-image-proc
   simulation/data_euroc:
     type: git
-    url: https://github.com/soallak/ros2_data_euroc.git
+    url: git@github.com:soallak/ros2_data_euroc.git
     version: main
   simulation/data_publisher:
     type: git
-    url: https://github.com/soallak/ros2_data_publisher.git
+    url: git@github.com:soallak/ros2_data_publisher.git
     version: main
   simulation/slam_launch:
     type: git
-    url: https://github.com/soallak/ros2_slam_launch.git
+    url: git@github.com:soallak/ros2_slam_launch.git
     version: main
   simulation/slam_tracepoint_analysis:
     type: git
-    url: https://github.com/soallak/ros2_slam_tracepoint_analysis.git
+    url: git@github.com:soallak/ros2_slam_tracepoint_analysis.git
     version: main
   simulation/slam_tracepoint_provider:
     type: git
-    url: https://github.com/soallak/ros2_slam_tracepoint_provider.git
+    url: git@github.com:soallak/ros2_slam_tracepoint_provider.git
     version: main
   slam/openvslam:
     type: git
-    url: https://github.com/soallak/openvslam.git
+    url: git@github.com:soallak/openvslam.git
     version: main
   slam/openvslam-ros-fork:
     type: git
-    url: https://github.com/soallak/ros2_openvslam.git
+    url: git@github.com:soallak/ros2_openvslam.git
     version: ros2
