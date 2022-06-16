@@ -59,7 +59,7 @@ RUN git clone https://github.com/soallak/ros2_openvslam_acceleration.git && \
     cd ros2_openvslam_acceleration/src && vcs import < .repos && cd ..;
 
 ENV XILINX_HLS=/workdir/Vitis_HLS/2021.2/
-ENV XILINX_VIVAOD=""
+ENV XILINX_VIVADO=""
 ENV XILINX_VITIS=""
 
 RUN bash -c 'source /opt/ros/rolling/setup.bash; \
