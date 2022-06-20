@@ -4,8 +4,9 @@ repositories:
     url: https://github.com/ros-acceleration/acceleration_firmware.git
     version: main
   kria/acceleration_firmware_kv260:
-    type: zip
-    url: https://github.com/soallak/acceleration_firmware_kv260/releases/download/1.0.0/acceleration_firmware_kv260_soallak.zip
+    type: git
+    url: git@github.com:soallak/acceleration_firmware_kv260.git
+    version: main
   kria/ament_acceleration:
     type: git
     url: https://github.com/ros-acceleration/ament_acceleration.git
