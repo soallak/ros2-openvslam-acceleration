@@ -1,6 +1,8 @@
+.cache/
 acceleration/
 build*/
 install*/
 log/
 
 vitis_hls.log
+compile_commands.json
