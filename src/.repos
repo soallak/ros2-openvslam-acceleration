@@ -18,15 +18,11 @@ repositories:
   kria/ament_vitis:
     type: git
     url: https://github.com/soallak/ament_vitis.git
-    version: soallak/introduce-firmware-dir-variable
+    version: main
   kria/colcon-acceleration:
     type: git
     url: https://github.com/ros-acceleration/colcon-acceleration.git
     version: main
-  kria/colcon-mixin:
-    type: git
-    url: https://github.com/colcon/colcon-mixin.git
-    version: master
   kria/vitis_common:
     type: git
     url: https://github.com/soallak/vitis_common.git

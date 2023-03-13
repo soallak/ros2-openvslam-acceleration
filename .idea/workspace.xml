@@ -16,13 +16,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67a7e089-d2a8-4b9e-822c-a9de642a7a66" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copyright/Apache.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copyright/Apache.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/customTargets.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/swallak.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tools/External Tools.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.repos" beforeDir="false" afterPath="$PROJECT_DIR$/src/.repos" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.repos_ssh" beforeDir="false" afterPath="$PROJECT_DIR$/src/.repos_ssh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +121,7 @@
       <workItem from="1678700158477" duration="68000" />
       <workItem from="1678700239317" duration="697000" />
       <workItem from="1678700954877" duration="1227000" />
+      <workItem from="1678702316225" duration="7464000" />
     </task>
     <servers />
   </component>
