@@ -10,7 +10,7 @@ repositories:
   kria/ament_acceleration:
     type: git
     url: https://github.com/ros-acceleration/ament_acceleration.git
-    version: main
+    version: humble
   kria/ament_cuda:
     type: git
     url: https://github.com/ros-acceleration/ament_cuda.git
@@ -18,10 +18,6 @@ repositories:
   kria/ament_vitis:
     type: git
     url: git@github.com:soallak/ament_vitis.git
-    version: main
-  kria/colcon-acceleration:
-    type: git
-    url: https://github.com/ros-acceleration/colcon-acceleration.git
     version: main
   kria/vitis_common:
     type: git
@@ -38,6 +34,10 @@ repositories:
   simulation/data_euroc:
     type: git
     url: git@github.com:soallak/ros2_data_euroc.git
+    version: main
+  simulation/data_tum:
+    type: git
+    url: git@github.com:soallak/ros2_data_tum.git
     version: main
   simulation/data_publisher:
     type: git

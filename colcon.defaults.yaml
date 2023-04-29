@@ -1,0 +1,6 @@
+{
+  "build" : {
+    "parallel-workers": 32,
+    "cmake-args" : ["-DROS_VITIS_TARGET=OFF", "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"]
+  }
+}

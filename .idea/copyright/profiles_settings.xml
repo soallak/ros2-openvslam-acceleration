@@ -1,7 +1,11 @@
 <component name="CopyrightManager">
-  <settings>
+  <settings default="Apache">
     <module2copyright>
       <element module="Project Files" copyright="GPLv3" />
     </module2copyright>
+    <LanguageOptions name="ObjectiveC">
+      <option name="fileTypeOverride" value="3" />
+      <option name="prefixLines" value="false" />
+    </LanguageOptions>
   </settings>
 </component>
